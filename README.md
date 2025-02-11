@@ -6,7 +6,7 @@ EphemeralCache is a *lightweight, self-cleaning cache* for JavaScript that autom
 * Great for expensive computations - Ideal for caching API responses, heavy calculations, or large objects
 ## Usage
 Add the following class to your project:
-```
+```javascript
 class EphemeralCache {
 	constructor() {
 		this.cache = new Map(); // Stores WeakRefs
@@ -32,7 +32,7 @@ class EphemeralCache {
 export default EphemeralCache;
 ```
 Then use it:
-```
+```javascript
 const cache = new EphemeralCache();
 
 function heavyComputation(x) {
